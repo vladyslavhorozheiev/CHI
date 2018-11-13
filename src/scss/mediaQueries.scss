@@ -1,0 +1,879 @@
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) {
+	h2 {
+		font-size: 32px;
+	}
+
+	.reverse {
+		flex-direction: column-reverse;
+	}
+
+
+	//HEADER
+	.desktop-menu {
+		display: none;
+	}
+
+	.navbar {
+		height: 87px;
+
+		&-brand {
+			margin-right: 0;
+		}
+
+		& .language-btn {
+			width: 60px;
+			background: #f7f7f7;
+			border: 1px solid #c9c9ca;
+			border-radius: 4px;
+			position: relative;
+			padding: 14px 0;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/french-icon.png');
+				top: 9px;
+				left: 13px;
+				width: 14px;
+				height: 11px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/arrow-icon.png');
+				top: 13px;
+				left: 40px;
+				width: 8px;
+				height: 4px;
+			}
+		}
+
+		& .location-btn {
+			width: 60px;
+			background: #c9cbcf;
+			border: 1px solid #7a7f88;
+			border-radius: 4px;
+			padding: 14px 0;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/user-icon.png');
+				top: 7px;
+				left: 10px;
+				width: 14px;
+				height: 17px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/arrow-icon2.png');
+				top: 13px;
+				left: 40px;
+				width: 8px;
+				height: 4px;
+			}
+		}
+	}
+
+	.modal-content {
+		padding: 25px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 180px;
+		position: relative;
+		top: 80px;
+		left: 70px;
+	}
+
+	.modal-backdrop.show {
+		opacity: .9;
+		background: #fff;
+	}
+
+	.close {
+		border: none;
+		background: #fff;
+		position: relative;
+		top: -15px;
+		left: 76px;
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		width: 170px;
+		background: #fff;
+		flex-basis: 56%;
+		flex-grow: 0;
+		z-index: 2;
+		position: relative;
+		left: -10px;
+		top: 25px;
+		padding-left: 10px;
+	}
+
+	.card-header {
+		padding: 15px 0;
+		position: relative;
+
+		&:last-child {
+			padding-bottom: 0px;
+		}
+
+		&-title {
+			display: inline-block;
+			width: 100%;
+
+			& a {
+				display: block;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 8px;
+					left: 116px;
+					width: 10px;
+					height: 5px;
+					width: 10px;
+					background: url('../../dist/img/chevron-down.png');
+					transition: all 300ms ease-in 0s;
+
+					&:hover {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+	.card-body-item {
+		display: block;
+		color: inherit;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+	}
+
+	//SECTION SLIDER
+
+
+	.section-holder {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.carousel {
+		padding-bottom: 50px;
+	}
+
+	.form-mobile {
+		padding: 0;
+		margin-top: 35px;
+	}
+
+	.rent-car-form {
+		padding: 20px 10px 25px 10px;
+
+		& .row {
+			justify-content: space-between;
+
+			& .car-type {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.date-time-holder {
+		flex-direction: column;
+		margin-top: 20px;
+
+		& .date-time-element {
+			padding: 0;
+			padding-bottom: 25px;
+		}
+	}
+
+	.date-holder {
+		& .date-element {
+			width: 60%;
+
+			& input {
+				width: 100%;
+			}
+		}
+
+		& .time-element {
+			width: 36%;
+			margin-left: 8px;
+		}
+	}
+
+	//INFO
+
+	.block-link {
+		text-align: center;
+		padding-bottom: 30px;
+	}
+
+	//NEWSLETTER
+
+	.newsletter {
+		text-align: center;
+
+		& .form-inline {
+			padding: 0;
+
+			& .form-group {
+				padding: 0;
+				margin: 0;
+				padding-top: 18px;
+				padding-bottom: 35px;
+				justify-content: center;
+				display: flex;
+			}
+		}
+	}
+
+	.form-text {
+		padding-top: 35px;
+	}
+
+	.form-element {
+		display: flex;
+		flex-direction: column;
+		width: 94.33%;
+
+		& input {
+			width: 100%;
+			padding: 12px 10px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		& .btn {
+			width: 100%;
+			padding: 10px 0;
+		}
+	}
+
+	//FOOTER
+
+	.footer {
+		padding-top: 44px;
+		padding-bottom: 20px;
+
+		&-nav {
+			min-width: 150px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.bottom-line {
+		flex-direction: column;
+		text-align: center;
+
+		& .adress {
+			padding-top: 18px;
+		}
+	}
+}
+
+
+//// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+
+	.reverse {
+		flex-direction: column-reverse;
+	}
+
+	//HEADER
+
+	.desktop-menu {
+		display: none;
+	}
+
+	.navbar {
+		height: 87px;
+
+		&-brand {
+			margin-right: 0;
+		}
+
+		& .language-btn {
+			width: 60px;
+			background: #f7f7f7;
+			border: 1px solid #c9c9ca;
+			border-radius: 4px;
+			position: relative;
+			padding: 14px 0;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/french-icon.png');
+				top: 9px;
+				left: 13px;
+				width: 14px;
+				height: 11px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/arrow-icon.png');
+				top: 13px;
+				left: 40px;
+				width: 8px;
+				height: 4px;
+			}
+		}
+
+		& .location-btn {
+			width: 60px;
+			background: #c9cbcf;
+			border: 1px solid #7a7f88;
+			border-radius: 4px;
+			padding: 14px 0;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/user-icon.png');
+				top: 7px;
+				left: 10px;
+				width: 14px;
+				height: 17px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/arrow-icon2.png');
+				top: 13px;
+				left: 40px;
+				width: 8px;
+				height: 4px;
+			}
+		}
+	}
+
+	.modal-content {
+		padding: 30px 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 200px !important;
+		position: relative;
+		top: 59px;
+		left: 29%;
+	}
+
+	.modal-backdrop.show {
+		opacity: .9;
+		background: #fff;
+	}
+
+	.close {
+		border: none;
+		background: #fff;
+		position: relative;
+		top: -15px;
+		left: 76px;
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		width: 170px;
+		background: #fff;
+		flex-basis: 56%;
+		flex-grow: 0;
+		z-index: 2;
+		position: relative;
+		left: -10px;
+		top: 25px;
+		padding-left: 10px;
+	}
+
+	.card-header {
+		padding: 15px 0;
+		position: relative;
+
+		&:last-child {
+			padding-bottom: 0px;
+		}
+
+		&-title {
+			display: inline-block;
+			width: 100%;
+
+			& a {
+				display: block;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 8px;
+					left: 116px;
+					width: 10px;
+					height: 5px;
+					width: 10px;
+					background: url('../../dist/img/chevron-down.png');
+					transition: all 300ms ease-in 0s;
+
+					&:hover {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+	.card-body-item {
+		display: block;
+		color: inherit;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+	}
+
+
+	//SECTION SLIDER
+
+
+	.section-holder {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.carousel {
+		padding-bottom: 50px;
+	}
+
+	.location-field {
+		width: 100%;
+		max-width: none;
+	}
+
+
+	.form-mobile {
+		padding: 0;
+		margin-top: 35px;
+	}
+
+	.rent-car-form {
+		padding: 20px 10px 25px 10px;
+
+		& .row {
+			justify-content: space-between;
+
+			& .car-type {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.date-time-holder {
+		flex-direction: column;
+		margin-top: 20px;
+
+		& .date-time-element {
+			padding: 0;
+			padding-bottom: 25px;
+		}
+	}
+
+	.date-holder {
+		& .date-element {
+			width: 61%;
+
+			& input {
+				width: 100%;
+			}
+		}
+
+		& .time-element {
+			width: 36%;
+			margin-left: 12px;
+		}
+	}
+
+	.modal-content {
+		padding: 25px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 180px;
+		position: relative;
+		top: 80px;
+		left: 70px;
+	}
+
+	.modal-backdrop.show {
+		opacity: .9;
+		background: #fff;
+	}
+
+	.close {
+		border: none;
+		background: #fff;
+		position: relative;
+		top: -15px;
+		left: 76px;
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		width: 170px;
+		background: #fff;
+		flex-basis: 56%;
+		flex-grow: 0;
+		z-index: 2;
+		position: relative;
+		left: -10px;
+		top: 25px;
+		padding-left: 10px;
+	}
+
+	.card-header {
+		padding: 15px 0;
+		position: relative;
+
+		&:last-child {
+			padding-bottom: 0px;
+		}
+
+		&-title {
+			display: inline-block;
+			width: 100%;
+
+			& a {
+				display: block;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 8px;
+					left: 116px;
+					width: 10px;
+					height: 5px;
+					width: 10px;
+					background: url('../../dist/img/chevron-down.png');
+					transition: all 300ms ease-in 0s;
+
+					&:hover {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+	.card-body-item {
+		display: block;
+		color: inherit;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+	}
+
+
+	//INFO
+
+	.block-link {
+		text-align: center;
+		padding-bottom: 30px;
+	}
+
+	//NEWSLETTER
+
+	.newsletter {
+		text-align: center;
+
+		& .form-inline {
+			padding: 0;
+
+			& .form-group {
+				padding: 0;
+				margin: 0;
+				padding-top: 18px;
+				padding-bottom: 35px;
+				justify-content: center;
+				display: flex;
+			}
+		}
+	}
+
+	.form-text {
+		padding-top: 35px;
+	}
+
+	.form-element {
+		display: flex;
+		flex-direction: column;
+		width: 94.33%;
+
+		& input {
+			width: 100%;
+			padding: 12px 10px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		& .btn {
+			width: 100%;
+			padding: 10px 0;
+		}
+	}
+
+	//FOOTER
+
+	.footer {
+		padding-top: 44px;
+		padding-bottom: 20px;
+
+		&-nav {
+			min-width: 150px;
+			padding-bottom: 20px;
+		}
+
+		.row {
+			justify-content: center;
+
+			& .footer-nav {
+				text-align: center;
+			}
+		}
+	}
+
+	.card-holder {
+		justify-content: center;
+	}
+
+	.bottom-line {
+		flex-direction: column;
+		text-align: center;
+
+		& .adress {
+			padding-top: 18px;
+		}
+	}
+}
+
+//// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.reverse {
+		flex-direction: column-reverse;
+	}
+
+	//HEADER
+
+	.desktop-menu {
+		display: none;
+	}
+
+	.navbar {
+		height: 87px;
+
+		&-brand {
+			margin-right: 0;
+		}
+
+		& .language-btn {
+			width: 60px;
+			background: #f7f7f7;
+			border: 1px solid #c9c9ca;
+			border-radius: 4px;
+			position: relative;
+			padding: 14px 0;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/french-icon.png');
+				top: 9px;
+				left: 13px;
+				width: 14px;
+				height: 11px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/arrow-icon.png');
+				top: 13px;
+				left: 40px;
+				width: 8px;
+				height: 4px;
+			}
+		}
+
+		& .location-btn {
+			width: 60px;
+			background: #c9cbcf;
+			border: 1px solid #7a7f88;
+			border-radius: 4px;
+			padding: 14px 0;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/user-icon.png');
+				top: 7px;
+				left: 10px;
+				width: 14px;
+				height: 17px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				background: url('../../dist/img/arrow-icon2.png');
+				top: 13px;
+				left: 40px;
+				width: 8px;
+				height: 4px;
+			}
+		}
+	}
+
+	.modal-content {
+		padding: 25px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 180px;
+		position: relative;
+		top: 80px;
+		left: 70px;
+	}
+
+	.modal-backdrop.show {
+		opacity: .9;
+		background: #fff;
+	}
+
+	.close {
+		border: none;
+		background: #fff;
+		position: relative;
+		top: -15px;
+		left: 76px;
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		width: 170px;
+		background: #fff;
+		flex-basis: 63%;
+		flex-grow: 0;
+		z-index: 2;
+		position: relative;
+		left: -10px;
+		top: 25px;
+		padding-left: 10px;
+	}
+
+	.card-header {
+		padding: 15px 0;
+		position: relative;
+
+		&:last-child {
+			padding-bottom: 0px;
+		}
+
+		&-title {
+			display: inline-block;
+			width: 100%;
+
+			& a {
+				display: block;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 8px;
+					left: 116px;
+					width: 10px;
+					height: 5px;
+					width: 10px;
+					background: url('../../dist/img/chevron-down.png');
+					transition: all 300ms ease-in 0s;
+
+					&:hover {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+	.card-body-item {
+		display: block;
+		color: inherit;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+	}
+
+
+	//INFO
+
+	//NEWSLETTER
+
+	.newsletter {
+		text-align: center;
+
+		& .form-inline {
+			padding: 0;
+
+			& .form-group {
+				padding: 0;
+				margin: 0;
+				padding-top: 18px;
+				padding-bottom: 25px;
+				justify-content: center;
+				display: flex;
+			}
+		}
+	}
+
+	.form-text {
+		padding-top: 25px;
+	}
+
+	//FOOTER
+
+	.footer {
+		padding-top: 44px;
+		padding-bottom: 20px;
+
+		&-nav {
+			min-width: 150px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.card-holder {
+		justify-content: center;
+	}
+
+	.bottom-line {
+		flex-direction: column;
+		text-align: center;
+
+		& .adress {
+			padding-top: 18px;
+		}
+	}
+}

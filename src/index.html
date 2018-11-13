@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="../dist/lib/air-datepicker.css">
+	<link rel="stylesheet" href="../dist/css/style.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light desktop-menu">
+				<a class="navbar-brand" href="#">
+					<img src="../dist/img/logo-icon.png" alt="logo" class="brand-img">
+					<span class="brand">Renty</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<!--togler style-->
+					<span>
+						<img src="../dist/img/toggle-button.png" alt="toggle">
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Help
+							</a>
+							<div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Home v.1</a>
+								<a class="dropdown-item" href="#">Home v.2</a>
+								<a class="dropdown-item disabled" href="#">Home v.3</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Terms&#38;Conditions</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Contact Us</a>
+						</li>
+					</ul>
+
+					<form class="form">
+						<div class="row no-gutters">
+							<div class="select-holder">
+								<select>
+									<option data-image="img/french-icon.png" value="french">French</option>
+									<option data-image="img/french-icon.png" value="germany">Germany</option>
+
+								</select>
+							</div>
+							<div class="select-wrapper-location">
+								<select name="location" id="location" class="form-control location-select">
+									<option value="choose">Choose Country</option>
+								</select>
+							</div>
+
+						</div>
+
+						<div class="row no-gutters">
+
+							<button class="reg-btn" type="submit">Register</button>
+							<button class="sign-btn" type="submit">Sign In</button>
+
+						</div>
+					</form>
+				</div>
+			</nav>
+
+
+			<nav class="navbar navbar-expand-lg navbar-light mobile-menu d-lg-none">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<!--togler style-->
+					<span>
+						<img src="../dist/img/toggle-button.png" alt="toggle">
+					</span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span class="brand">Renty</span>
+				</a>
+
+				<button type="button" class="btn language-btn" data-toggle="modal" data-target="#exampleModal">
+				</button>
+				<button type="button" class="btn location-btn" data-toggle="modal" data-target="#exampleModal">
+				</button>
+
+
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">
+									<img src="../dist/img/close=icon.png" alt="close">
+								</span>
+							</button>
+							<div class="select-holder">
+								<select>
+									<option data-image="img/french-icon.png" value="french">French</option>
+									<option data-image="img/french-icon.png" value="germany">Germany</option>
+								</select>
+							</div>
+							<div class="select-wrapper-location">
+								<select name="location" id="location" class="form-control location-select">
+									<option value="choose">Choose Country</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div id="accordion">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<span class="card-header-title">
+									<a class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Help
+									</a>
+								</span>
+							</div>
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<a href="#" class="card-body-item">Home v.1</a>
+									<a href="#" class="card-body-item">Home v.2</a>
+									<a class="disabled card-body-item" href="#">Home v.3</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<span class="card-header-title">
+									<a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Terms&#38;Conditions
+									</a>
+								</span>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									<a href="#" class="card-body-item">Terms&#38;Conditions1</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingThree">
+								<span class="card-header-title">
+									<a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										About
+									</a>
+								</span>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="card-body">
+									<a href="#" class="card-body-item">About1</a>
+								</div>
+							</div>
+						</div>
+						<div class="card disabled">
+							<div class="card-header" id="headingFour">
+								<span class="card-header-title">
+									<a class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Contact Us
+									</a>
+								</span>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+								<div class="card-body">
+									<a href="#" class="card-body-item">Contact Us1</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="slider">
+		<div class="container">
+			<div class="row reverse">
+				<div class="col-lg-6 form-mobile">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Book a Car</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-selected="false" aria-controls="profile">Manage Reservation</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
+							<form action="#!" class="rent-car-form">
+								<div class="location-field">
+									<div class="location-filed-title"><label for="location-field-title">LOCATION</label>
+										<span class="location-field-airports-cod">
+											<a href="#">AIRPORT CODES</a>
+										</span>
+									</div>
+									<input class="form-control" type="text" placeholder="Enter airport, city or zip code" id="location-field-title">
+								</div>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Return at different location</span>
+								</label>
+								<div class="date-time-holder">
+									<div class="date-time-element">
+										<label for="pick-date" class="calendar-label">PICK-UP-DATE</label>
+										<div class="date-holder">
+											<div class="date-element">
+												<input type='text' class="datepicker-here" data-date-format='d/m/yyyy' id="pick-date">
+											</div>
+											<input type="text" class="time-element">
+										</div>
+									</div>
+									<div>
+										<label for="drop-date" class="calendar-label">DROP-OFF-DATE</label>
+										<div class="date-holder">
+											<div class="date-element">
+												<input type='text' class="datepicker-here" data-date-format='d/m/yyyy' id="pick-date">
+											</div>
+											<input type="text" class="time-element">
+										</div>
+									</div>
+								</div>
+								<div class="row no-gutters">
+									<div class="car-type">
+										<select>
+											<option data-image="img/french-icon.png" value="french">Standard</option>
+											<option data-image="img/french-icon.png" value="germany">Premium</option>
+										</select>
+									</div>
+									<button type="submit" class="btn btn-continue">CONTINUE</button>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">TO DO!</div>
+					</div>
+				</div>
+				<div id="carouselExampleIndicators" class="carousel slide col-lg-6" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="section-holder">
+										<h2 class="section-title">
+											Great car hire deals.
+										</h2>
+										<p class="section-desc">
+											Phasellus eget ultricies libero. Sed dolor turpis, malesuada vitae cursus a, auctor semper neque.
+										</p>
+										<div class="section-link">
+											<div class="sprite-arrow-icon"></div>
+											<a href="#">LEARN MORE</a>
+										</div>
+										<img src="../dist/img/carslider.png" alt="car" class="img-fluid w-100">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row ">
+								<div class="col-lg-12">
+									<div class="section-holder">
+										<h2 class="section-title">
+											Great car hire deals.
+										</h2>
+										<p class="section-desc">
+											Phasellus eget ultricies libero. Sed dolor turpis, malesuada vitae cursus a, auctor semper neque.
+										</p>
+										<div class="section-link">
+											<div class="sprite-arrow-icon"></div>
+											<a href="#">LEARN MORE</a>
+										</div>
+										<img src="../dist/img/carslider.png" alt="car" class="img-fluid w-100">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row ">
+								<div class="col-lg-12">
+									<div class="section-holder">
+										<h2 class="section-title">
+											Great car hire deals.
+										</h2>
+										<p class="section-desc">
+											Phasellus eget ultricies libero. Sed dolor turpis, malesuada vitae cursus a, auctor semper neque.
+										</p>
+										<div class="section-link">
+											<div class="sprite-arrow-icon"></div>
+											<a href="#">LEARN MORE</a>
+										</div>
+										<img src="../dist/img/carslider.png" alt="car" class="img-fluid w-100">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<h3>We are leading car rental agency with 300,000 Happy Customers.</h3>
+					<p class="block-text">
+						Morbi orci ante, consectetur id vestibulum quis, suscipit eu eros. Duis non egestas dolor. Duis non volutpat leo. Aliquam nisi eros, accumsan non gravida vitae, ultrices eu eros. Phasellus sagittis mattis tristique.
+					</p>
+					<div class="block-link">
+						<div class="sprite-dark-arrow-icon"></div>
+						<a href="#">LEARN MORE</a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-6">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="sprite-rates-icon"></div>
+							<h4 class="block-title">Special low rates on car booking</h4>
+							<p class="block-text">
+								Nunc ut nibh enim, id dapibus quam. Mauris id est at diam rutrum ultricies. Vivamus et dolor velit. Nam congue blandit nulla sed tincidunt.
+							</p>
+						</div>
+						<div class="col-lg-6">
+							<div class="sprite-manage-icon"></div>
+							<h4 class="block-title">Manage your booking online</h4>
+							<p class="block-text">
+								Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="sprite-support-icon"></div>
+							<h4 class="block-title">Dedicated customer support</h4>
+							<p class="block-text">
+								Praesent tempus egestas blandit. Nunc euismod volutpat ultrices. Nam fermentum nibh eget mi vehicula dictum.
+							</p>
+						</div>
+						<div class="col-lg-6">
+							<div class="sprite-spool-icon"></div>
+							<h4 class="block-title">You are guaranteed a car</h4>
+							<p class="block-text">
+								Donec vitae orci metus, et viverra ipsum. Curabitur tristique tristique lacinia. Sed sagittis placerat vestibulum.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="newsletter">
+		<div class="container">
+			<form class="form-inline">
+				<div class="col-lg-5">
+					<h2 class="form-text">Signup for our email to celebrate great specials</h2>
+				</div>
+				<div class="form-group col-lg-7">
+					<div class="form-element">
+						<label for="name" class="sr-only"></label>
+						<input type="text" class="form-element-input" id="name" placeholder="Name">
+						<label for="email" class="sr-only"></label>
+						<input type="email" class="form-element-input" id="email" placeholder="Email">
+						<button type="submit" class="btn">SIGNUP</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-8">
+					<div class="row no-gutters">
+						<div class="footer-nav">
+							<span class="title">
+								Renty
+							</span>
+							<ul class="nav flex-column text-block">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Privacy</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Services</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Partners</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">News</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-nav">
+							<span class="title">
+								About
+							</span>
+							<ul class="nav flex-column text-block">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Latest News</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Press Releases</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Careers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#">Terms of Use</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-nav d-none d-sm-block">
+							<span class="title">
+								Support
+							</span>
+							<ul class="nav flex-column text-block">
+
+								<li class="nav-item">
+									<a class="nav-link" href="#">Contact Us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Find Your Invoice</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">FAQ</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 d-none d-md-block">
+					<span class="title icon-twitter">
+						Recent tweets
+					</span>
+					<p class="text-block pt-4 mb-2">
+						<a href="#">@bestwebsoft</a> velit, vitae tincidunt orci. Proin vitae auctor lectus.
+						<a href="#">http://bestwebsoft.com/</a>
+					</p>
+					<cite class="post-time">posted 2 days ago</cite>
+				</div>
+				<div class="col-lg-4 ">
+					<div class="card-holder">
+						<div class="card-holder-img">
+							<img src="../dist/img/support-big-icon.png" alt="support" class="img-fluid w-100">
+						</div>
+						<div class="card-holder-contact">
+							<p class="contact-title">ONLINE SUPPORT</p>
+							<p class="contact-tell">+1 (555) 555 - 28 - 28</p>
+							<p class="contact-email">
+								<a href="#">sales@bestwebsoft.com</a>
+							</p>
+						</div>
+					</div>
+					<div class="social-info">
+						<div class="">
+							<img src="../dist/img/facebook.png" alt="facebook">
+							<span class="facebook">117</span>
+						</div>
+						<div class="">
+							<img src="../dist/img/twitter.png" alt="twitter">
+							<span class="twitter">692</span>
+						</div>
+						<div class="">
+							<img src="../dist/img/google.png" alt="google">
+							<span class="google">70</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bottom-hr">
+
+		</div>
+		<div class="container">
+			<div class="row bottom-line">
+				<a href="#">
+					<img src="../dist/img/footer-logo.png" alt="footerlogo" class="img-fluid">
+				</a>
+				<span class="adress">
+					Renty Company Inc,120 CA 15th Avenue - Suite 214
+				</span>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../dist/lib/datepicker.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../dist/lib/select.js"></script>
+	<script src="../src/js/script.js"></script>
+
+</body>
+
+</html>

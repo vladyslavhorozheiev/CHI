@@ -1,0 +1,87 @@
+//slass for sprite
+//<div class="sprite-arrow-icon"></div>
+//<div class="sprite-dark-arrow-icon"></div>
+//<div class="sprite-manage-icon"></div>
+//<div class="sprite-rates-icon"></div>
+//<div class="sprite-spool-icon"></div>
+//<div class="sprite-support-icon"></div>
+.sprite-arrow-icon,
+.sprite-dark-arrow-icon,
+.sprite-manage-icon,
+.sprite-rates-icon,
+.sprite-spool-icon,
+.sprite-support-icon {
+	display: inline-block;
+	background: url('../../dist/img/spritesheet.png') no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+	text-align: left;
+}
+
+.sprite-arrow-icon {
+	background-position: -5px -0px;
+	width: 16px;
+	height: 16px;
+}
+
+.sprite-dark-arrow-icon {
+	background-position: -26px -0px;
+	width: 16px;
+	height: 16px;
+}
+
+.sprite-manage-icon {
+	background-position: -5px -21px;
+	width: 16px;
+	height: 16px;
+}
+
+.sprite-rates-icon {
+	background-position: -26px -21px;
+	width: 16px;
+	height: 16px;
+}
+
+.sprite-spool-icon {
+	background-position: -5px -42px;
+	width: 16px;
+	height: 16px;
+}
+
+.sprite-support-icon {
+	background-position: -26px -42px;
+	width: 16px;
+	height: 16px;
+}
+
+
+//icons
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e900";
+	color: #3b5998;
+}
+
+.icon-lifebuoy:before {
+	content: "\e941";
+}
+
+.icon-twitter:before {
+	content: "\ea96";
+}
